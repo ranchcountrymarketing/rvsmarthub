@@ -8,7 +8,7 @@
   <packaging>jar</packaging>
 
   <name>rvsmarthub</name>
-  <url>http://maven.apache.org</url>
+  <url>http://smarthub.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,4 +27,13 @@
     	<version>1.2</version>
     </dependency>
   </dependencies>
+  <description>RV Smart Hub is a &quot;Smart Home Automation&quot; system for Recreational Vehicles (RVs). Built with Java for use on the Raspberry Pi 3/4 platform.</description>
+  <organization>
+  	<name>Ranch Country Ventures, Ltd.</name>
+  	<url>http://ranchcountryventures.com</url>
+  </organization>
+  <scm>
+  	<url>https://github.com/ranchcountrymarketing/rvsmarthub</url>
+  	<connection>https://github.com/ranchcountrymarketing/rvsmarthub.git</connection>
+  </scm>
 </project>
