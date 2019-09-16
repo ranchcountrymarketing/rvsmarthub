@@ -36,4 +36,23 @@
   	<url>https://github.com/ranchcountrymarketing/rvsmarthub</url>
   	<connection>https://github.com/ranchcountrymarketing/rvsmarthub.git</connection>
   </scm>
+
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-assembly-plugin</artifactId>
+  			<configuration>
+        		<archive>
+            		<manifest>
+                		<mainClass>com.rvsmarthub.App</mainClass>
+            		</manifest>
+        		</archive>
+        		<descriptorRefs>
+            		<descriptorRef>jar-with-dependencies</descriptorRef>
+        		</descriptorRefs>
+    		</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
 </project>
