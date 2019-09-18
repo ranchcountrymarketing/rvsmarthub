@@ -15,7 +15,6 @@ import javafx.stage.Stage;
  *  ------------------------------------------------------------------------
  *  Initializes application preferences and displays the GUI
  */
-@SuppressWarnings("restriction")
 public class App extends Application
 {
 	// String Constants
