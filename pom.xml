@@ -31,11 +31,25 @@
   <build>
   	<resources>
 		<resource>
-		<filtering>false</filtering>
-		<directory>src/main/resources/fxml</directory>
-		<includes>
-		<include>*.fxml</include>
-		</includes>
+				<filtering>false</filtering>
+				<directory>src/main/resources/fxml</directory>
+				<includes>
+					<include>*.fxml</include>
+				</includes>
+		</resource>
+		<resource>
+			<filtering>false</filtering>
+			<directory>src/main/resources/css</directory>
+			<includes>
+				<include>*.css</include>
+			</includes>
+		</resource>
+		<resource>
+			<filtering>false</filtering>
+			<directory>src/main/resources/png</directory>
+			<includes>
+				<include>*.png</include>
+			</includes>
 		</resource>
 	</resources>
   	<plugins>
