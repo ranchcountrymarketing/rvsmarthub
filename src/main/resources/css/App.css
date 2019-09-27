@@ -1,1 +1,67 @@
-@charset "ISO-8859-1";
+/**
+ * ----------------------------------------------------------------------------------
+ *  Colors
+ * ----------------------------------------------------------------------------------
+ */
+
+.dark-bg {
+	-fx-background-color: #333333;
+	-fx-fill: #333333;
+	-fx-border-width: 0;
+}
+
+.med-bg {
+	 -fx-background-color: #333333, #333333, derive(#555555, -20%);
+	-fx-fill: #333333;
+	-fx-border-width: 0;
+}
+
+.light-bg {}
+
+.purple-navy {
+	-fx-background-color: #3D5A80;
+	-fx-fill: #3D5A80;
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  Gradients
+ * ----------------------------------------------------------------------------------
+ */
+
+.lingrad-dark{
+   -fx-background-color: linear-gradient(#444444 50%, #333333 70%);
+}
+
+.lingrad-med{
+   -fx-background-color: linear-gradient(#999999 50%, #666666 70%);
+}
+
+/**
+ * ----------------------------------------------------------------------------------
+ *  JavaFX Components
+ * ----------------------------------------------------------------------------------
+ */
+ 
+Label {
+	-fx-text-fill: #eeeeee;
+	-fx-font: Lucinda Sans;
+}
+
+.titled-pane > .content > * {
+    -fx-padding: 0px;
+}
+
+.titled-pane .content {
+    -fx-border-width: 0;
+}
+
+.tab-pane *.tab-header-background {
+    -fx-background-color: #333333, #333333, derive(#777777, -20%);
+    -fx-border-width:0.0; 
+}
+
+.tab Label {
+	-fx-font-size: 0.6em;
+	-fx-font-weight: bold;
+}

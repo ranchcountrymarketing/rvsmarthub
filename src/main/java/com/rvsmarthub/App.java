@@ -46,6 +46,9 @@ public class App extends Application
 		// -------------------------------------------------------			
 		mainScene = new Scene(root, 1024, 600);		
 		
+		// Add CSS
+		mainScene.getStylesheets().add(App.class.getResource("/App.css").toExternalForm());
+		
 		showScene(mainStage, mainScene, APP_NAME);
 		
 	}

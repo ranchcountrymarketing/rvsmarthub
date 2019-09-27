@@ -18,7 +18,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Arc?>
-<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
@@ -29,22 +28,22 @@
          <children>
             <Accordion prefHeight="600.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <panes>
-                  <TitledPane animated="false" layoutX="10.0" layoutY="66.0" text="Thermostat &amp; Weather">
+                  <TitledPane alignment="CENTER" contentDisplay="RIGHT" text="Thermostat &amp; Weather">
                      <font>
                         <Font name="Lucida Sans Demibold" size="18.0" />
                      </font>
                      <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <AnchorPane styleClass="med-bg">
                            <children>
-                              <TabPane prefHeight="510.0" prefWidth="1055.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <TabPane layoutX="12.4" layoutY="15.4" prefHeight="467.0" prefWidth="1022.0" styleClass="dark-bg" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <tabs>
-                                    <Tab text="Living Area">
+                                    <Tab styleClass="lingrad-dark" text="Living Area">
                                        <content>
                                           <HBox>
                                              <children>
                                                 <AnchorPane prefWidth="250.0">
                                                    <children>
-                                                      <GridPane layoutX="-24.0" layoutY="101.0" prefHeight="549.0" prefWidth="217.66666666666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                      <GridPane layoutX="-24.0" layoutY="101.0" prefHeight="549.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                          <columnConstraints>
                                                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                          </columnConstraints>
@@ -54,14 +53,14 @@
                                                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                          </rowConstraints>
                                                          <children>
-                                                            <VBox alignment="CENTER" prefHeight="182.0" prefWidth="217.0">
+                                                            <VBox alignment="BOTTOM_CENTER" prefHeight="182.0" prefWidth="300.0" GridPane.rowIndex="2">
                                                                <children>
                                                                   <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
                                                                      <image>
-                                                                        <Image url="@../../../../../../../Downloads/trzcacak.rs-ceiling-fan-png-1358135.png" />
+                                                                        <Image url="@../png/fan.png" />
                                                                      </image>
                                                                      <VBox.margin>
-                                                                        <Insets bottom="10.0" />
+                                                                        <Insets bottom="10.0" top="20.0" />
                                                                      </VBox.margin>
                                                                   </ImageView>
                                                                   <Label text="Fan - Auto">
@@ -70,49 +69,54 @@
                                                                      </font>
                                                                   </Label>
                                                                </children>
+                                                               <GridPane.margin>
+                                                                  <Insets bottom="100.0" />
+                                                               </GridPane.margin>
                                                             </VBox>
                                                          </children>
                                                       </GridPane>
                                                    </children>
                                                 </AnchorPane>
-                                                <AnchorPane prefWidth="500.0">
+                                                <AnchorPane prefWidth="424.0">
                                                    <children>
-                                                      <Arc fill="DODGERBLUE" layoutX="263.0" layoutY="293.0" length="270.0" radiusX="246.0" radiusY="246.0" startAngle="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
-                                                      <Arc fill="#587590" layoutX="263.0" layoutY="299.0" length="270.0" opacity="0.57" radiusX="248.0" radiusY="250.0" rotate="-14.9" startAngle="48.6" stroke="BLACK" strokeType="INSIDE" type="ROUND">
-                                                         <rotationAxis>
-                                                            <Point3D />
-                                                         </rotationAxis>
-                                                      </Arc>
-                                                      <Circle fill="DODGERBLUE" layoutX="265.0" layoutY="291.0" opacity="0.18" radius="246.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                                      <Circle fill="#eeeeee" layoutX="264.0" layoutY="297.0" radius="233.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                                      <Rectangle arcHeight="5.0" fill="#eeeeee" height="217.0" layoutY="292.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="526.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                                                      <Label alignment="CENTER" layoutX="208.0" layoutY="133.0" prefHeight="167.0" prefWidth="111.0" text="75" textAlignment="CENTER">
-                                                         <font>
-                                                            <Font name="System Bold" size="96.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Circle fill="#687d91" layoutX="423.0" layoutY="117.0" radius="17.0" stroke="#92aec3" strokeType="INSIDE" strokeWidth="3.0" />
-                                                      <Label layoutX="413.0" layoutY="100.0" prefHeight="33.0" prefWidth="23.0" text="80" textAlignment="CENTER" textFill="WHITE">
+                                                      <ImageView fitHeight="320.0" fitWidth="320.0" opacity="0.6" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="49.0">
+                                                         <image>
+                                                            <Image url="@../png/thermo-dial.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Arc disable="true" fill="DODGERBLUE" layoutX="262.0" layoutY="206.0" length="112.5" radiusX="162.0" radiusY="162.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="dark-bg" type="ROUND" visible="false" />
+                                                      <Arc fill="DODGERBLUE" layoutX="305.0" layoutY="140.0" length="157.5" radiusX="162.0" radiusY="162.0" startAngle="-135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="dark-bg" type="ROUND" />
+                                                      <ImageView fitHeight="149.0" fitWidth="127.0" layoutX="203.0" layoutY="107.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../png/heater-ico.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7d3dc" height="26.0" layoutX="396.0" layoutY="138.0" rotate="-114.7" stroke="#e0d9d9" strokeType="INSIDE" width="5.0" />
+                                                      <Label layoutX="255.0" layoutY="325.0" prefHeight="33.0" prefWidth="23.0" text="80" textAlignment="CENTER" textFill="WHITE">
                                                          <font>
                                                             <Font name="System Bold" size="18.0" />
                                                          </font>
                                                       </Label>
-                                                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7d3dc" height="21.0" layoutX="367.0" layoutY="69.0" rotate="-150.6" stroke="#e0d9d9" strokeType="INSIDE" width="5.0" />
-                                                      <Label layoutX="210.0" layoutY="134.0" text="Currently">
+                                                      <Label alignment="CENTER" layoutX="208.0" layoutY="139.0" prefHeight="1.0" prefWidth="111.0" text="75" textAlignment="JUSTIFY">
                                                          <font>
-                                                            <Font name="System Bold" size="24.0" />
+                                                            <Font size="96.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label layoutX="230.0" layoutY="278.0" text="Heat On">
+                                                      <Label layoutX="233.0" layoutY="267.0" style="-fx-text-fill: orange;" text="Heat On">
                                                          <font>
                                                             <Font size="18.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label layoutX="129.0" layoutY="321.0" text="Living  Area" textFill="#aaaaaa" AnchorPane.bottomAnchor="150.0">
+                                                      <Label layoutX="215.0" layoutY="133.0" text="Currently">
                                                          <font>
-                                                            <Font name="System Bold" size="48.0" />
+                                                            <Font size="24.0" />
                                                          </font>
                                                       </Label>
+                                                      <ImageView fitHeight="320.0" fitWidth="320.0" layoutX="10.0" layoutY="10.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../png/thermo-dial.png" />
+                                                         </image>
+                                                      </ImageView>
                                                    </children>
                                                 </AnchorPane>
                                                 <AnchorPane prefWidth="250.0">
@@ -127,14 +131,14 @@
                                                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                          </rowConstraints>
                                                          <children>
-                                                            <VBox alignment="CENTER" prefHeight="181.0" prefWidth="250.0">
+                                                            <VBox alignment="BOTTOM_CENTER" prefHeight="181.0" prefWidth="300.0" GridPane.rowIndex="2">
                                                                <children>
                                                                   <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
                                                                      <image>
-                                                                        <Image url="@../../../../../../../Downloads/61be7123ceb20e5475ff34b1159ec350.png" />
+                                                                        <Image url="@../png/calander-ico.png" />
                                                                      </image>
                                                                      <VBox.margin>
-                                                                        <Insets bottom="10.0" top="10.0" />
+                                                                        <Insets bottom="10.0" top="20.0" />
                                                                      </VBox.margin>
                                                                   </ImageView>
                                                                   <Label text="Schedule">
@@ -143,6 +147,9 @@
                                                                      </font>
                                                                   </Label>
                                                                </children>
+                                                               <GridPane.margin>
+                                                                  <Insets bottom="100.0" />
+                                                               </GridPane.margin>
                                                             </VBox>
                                                          </children>
                                                       </GridPane>
@@ -152,121 +159,7 @@
                                           </HBox>
                                        </content>
                                     </Tab>
-                                    <Tab text="Bedroom">
-                                       <content>
-                                          <HBox>
-                                             <children>
-                                                <AnchorPane prefWidth="250.0">
-                                                   <children>
-                                                      <GridPane layoutX="-24.0" layoutY="101.0" prefHeight="549.0" prefWidth="217.66666666666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                         <columnConstraints>
-                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                         </columnConstraints>
-                                                         <rowConstraints>
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                         </rowConstraints>
-                                                         <children>
-                                                            <VBox alignment="CENTER" prefHeight="182.0" prefWidth="217.0">
-                                                               <children>
-                                                                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
-                                                                     <image>
-                                                                        <Image url="@../../../../../../../Downloads/trzcacak.rs-ceiling-fan-png-1358135.png" />
-                                                                     </image>
-                                                                     <VBox.margin>
-                                                                        <Insets bottom="10.0" />
-                                                                     </VBox.margin>
-                                                                  </ImageView>
-                                                                  <Label text="Fan - Auto">
-                                                                     <font>
-                                                                        <Font name="System Bold" size="18.0" />
-                                                                     </font>
-                                                                  </Label>
-                                                               </children>
-                                                            </VBox>
-                                                         </children>
-                                                      </GridPane>
-                                                   </children>
-                                                </AnchorPane>
-                                                <AnchorPane prefWidth="500.0">
-                                                   <children>
-                                                      <Arc fill="DODGERBLUE" layoutX="263.0" layoutY="293.0" length="270.0" radiusX="246.0" radiusY="246.0" startAngle="64.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" type="ROUND" />
-                                                      <Arc fill="#587590" layoutX="263.0" layoutY="299.0" length="270.0" opacity="0.57" radiusX="248.0" radiusY="250.0" rotate="-14.9" startAngle="48.6" stroke="BLACK" strokeType="INSIDE" type="ROUND">
-                                                         <rotationAxis>
-                                                            <Point3D />
-                                                         </rotationAxis>
-                                                      </Arc>
-                                                      <Circle fill="DODGERBLUE" layoutX="265.0" layoutY="291.0" opacity="0.18" radius="246.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                                      <Circle fill="#eeeeee" layoutX="264.0" layoutY="297.0" radius="233.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                                      <Rectangle arcHeight="5.0" fill="#eeeeee" height="217.0" layoutY="292.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="526.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                                                      <Label alignment="CENTER" layoutX="208.0" layoutY="133.0" prefHeight="167.0" prefWidth="111.0" text="75" textAlignment="CENTER">
-                                                         <font>
-                                                            <Font name="System Bold" size="96.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Circle fill="#687d91" layoutX="423.0" layoutY="117.0" radius="17.0" stroke="#92aec3" strokeType="INSIDE" strokeWidth="3.0" />
-                                                      <Label layoutX="413.0" layoutY="100.0" prefHeight="33.0" prefWidth="23.0" text="80" textAlignment="CENTER" textFill="WHITE">
-                                                         <font>
-                                                            <Font name="System Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7d3dc" height="21.0" layoutX="367.0" layoutY="69.0" rotate="-150.6" stroke="#e0d9d9" strokeType="INSIDE" width="5.0" />
-                                                      <Label layoutX="210.0" layoutY="134.0" text="Currently">
-                                                         <font>
-                                                            <Font name="System Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="230.0" layoutY="278.0" text="Heat On">
-                                                         <font>
-                                                            <Font size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                      <Label layoutX="161.0" layoutY="318.0" text="Bedroom" textFill="#aaaaaa" AnchorPane.bottomAnchor="150.0">
-                                                         <font>
-                                                            <Font name="System Bold" size="48.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </AnchorPane>
-                                                <AnchorPane prefWidth="250.0">
-                                                   <children>
-                                                      <GridPane alignment="CENTER" prefHeight="559.3333333333334" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                                         <columnConstraints>
-                                                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                         </columnConstraints>
-                                                         <rowConstraints>
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                         </rowConstraints>
-                                                         <children>
-                                                            <VBox alignment="CENTER" prefHeight="181.0" prefWidth="250.0">
-                                                               <children>
-                                                                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
-                                                                     <image>
-                                                                        <Image url="@../../../../../../../Downloads/61be7123ceb20e5475ff34b1159ec350.png" />
-                                                                     </image>
-                                                                     <VBox.margin>
-                                                                        <Insets bottom="10.0" top="10.0" />
-                                                                     </VBox.margin>
-                                                                  </ImageView>
-                                                                  <Label text="Schedule">
-                                                                     <font>
-                                                                        <Font name="System Bold" size="18.0" />
-                                                                     </font>
-                                                                  </Label>
-                                                               </children>
-                                                            </VBox>
-                                                         </children>
-                                                      </GridPane>
-                                                   </children>
-                                                </AnchorPane>
-                                             </children>
-                                          </HBox>
-                                       </content>
-                                    </Tab>
-                                    <Tab text="Weather">
+                                    <Tab styleClass="lingrad-dark" text="Weather">
                                        <content>
                                           <HBox>
                                              <children>
@@ -316,8 +209,6 @@
                                                 </AnchorPane>
                                                 <AnchorPane prefWidth="500.0">
                                                    <children>
-                                                      <Circle fill="#eeeeee" layoutX="264.0" layoutY="307.0" radius="233.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                                                      <Rectangle arcHeight="5.0" fill="#eeeeee" height="217.0" layoutX="-9.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="526.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                                                       <ImageView fitHeight="325.0" fitWidth="243.0" focusTraversable="true" layoutX="118.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
                                                             <Image url="@../png/weather-icons/30.png" />
@@ -422,8 +313,11 @@
                            </children>
                         </AnchorPane>
                      </content>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
                   </TitledPane>
-                <TitledPane animated="false" expanded="false" text="Control Panel">
+                <TitledPane alignment="CENTER" animated="false" expanded="false" text="Control Panel">
                      <font>
                         <Font name="Lucida Sans Demibold" size="18.0" />
                      </font>
@@ -508,15 +402,7 @@
                         </GridPane>
                      </content>
                   </TitledPane>
-                  <TitledPane animated="false" layoutX="10.0" layoutY="38.0" text="Solar / Shore Power / Generator">
-                     <font>
-                        <Font name="Lucida Sans Demibold" size="18.0" />
-                     </font>
-                     <content>
-                        <WebView minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
-                     </content>
-                  </TitledPane>
-                <TitledPane animated="false" text="Tank and Sensors">
+                <TitledPane alignment="CENTER" animated="false" text="Tank and Sensors">
                      <font>
                         <Font name="Lucida Sans Demibold" size="18.0" />
                      </font>
@@ -635,6 +521,14 @@
                               </VBox>
                            </children>
                         </GridPane>
+                     </content>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" layoutX="10.0" layoutY="38.0" text="Solar / Shore Power / Generator">
+                     <font>
+                        <Font name="Lucida Sans Demibold" size="18.0" />
+                     </font>
+                     <content>
+                        <WebView minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
                      </content>
                   </TitledPane>
               </panes>
